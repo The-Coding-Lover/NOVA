@@ -74,6 +74,8 @@ function takeCommand(message) {
         speak("Opening Youtube...");
     } else if (message.includes("tell something about me")) {
         speak("Your Name is Jitendra");
+    } else if (message.includes('thank you') || message.includes('thanks')) {
+        speak("You are Welcome");
     } else if (message.includes("open whatsapp")) {
         window.open("https://whatsapp.com", "_blank");
         speak("Opening Whatsapp...");
